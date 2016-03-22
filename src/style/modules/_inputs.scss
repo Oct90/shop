@@ -1,0 +1,22 @@
+input[type=text], 
+input[type=email], 
+input[type=url], 
+input[type=password], 
+input[type=search], 
+textarea{
+	color: $base-grey;
+	padding: 11px 67px 6px 0px;
+	width: 100%;
+	outline: none;
+	border: none;
+	appearance: none;
+	border-bottom: 1px solid $base-black;
+	transition: .2s ease-in-out;
+    background: none;
+}
+input[disabled=disabled]{
+    opacity: 0.1;
+    &:hover{
+        color: $base-black !important;
+    }
+}

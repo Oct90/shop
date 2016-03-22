@@ -1,0 +1,51 @@
+.main-banner{
+	position: relative;
+	.info{
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		text-align: center;
+		.name{
+			color: #fff;
+			font-size: 1.500em;
+			line-height: 24px;
+			font-variant: small-caps;
+		}
+		.line{
+			width: 66px;
+			height: 2px;
+			background-color: white;
+			margin: 21px auto 24px;
+		}
+		.shop{
+			color: #fff;
+			font-size: 1.250em;
+			line-height: 24px;
+			font-variant: small-caps;
+            font-weight: 600;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+    .main-banner{
+        .info{
+            .name{
+                font-size: 2.250em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-banner{
+        .info{
+            .name{
+                font-size: 2.625em;
+            }
+            .shop{
+                font-size: 1.500em;
+            }
+        }
+    }
+}

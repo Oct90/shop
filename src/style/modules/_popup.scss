@@ -1,0 +1,116 @@
+.popup{
+    display: none;
+    height: auto;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99;
+    width: 770px;
+    margin-right: -385px;
+    right: 50%;
+    top: 10%;
+    .name{
+        color: $base-black;
+    }
+}
+
+.popup.add2cart{
+    padding: 1em;
+    .title{
+        color: $base-black;
+        font-weight: 400;
+        font-size: 1.5rem;
+        position: relative;
+        border-bottom: 1px solid $base-grey;
+        padding-bottom: 15px;
+    }
+    .info{
+        padding-top: 20px;
+        &:hover > div{
+            opacity: 0.2;
+        }
+        &:hover > .remove {
+            visibility: visible;
+            opacity: 1;
+        } 
+    }
+    .remove{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .img{
+        float: left;
+        width: 25%;
+        height: auto;
+        margin-right: 15px;
+    }
+    .details{
+        width: 67%;
+        float: left;
+    }
+    .name{
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .actions{
+        text-align: left;
+        padding: 20px 0;
+        &>a:first-child{
+            margin-right: 15px;
+        }
+    }
+}
+
+.popup.qsh{
+    .right,
+    .left{
+        width: 50%;
+        float: left;
+    }
+    .right{
+        padding: 18px 40px;
+        position: relative;
+    }
+    .brand-logo{
+        text-align: center;
+    }
+    .details{
+        margin-top: 30px;
+        p{
+            border-bottom: 1px #000 solid;
+            padding-bottom: 1em;
+        }
+    }
+    .tabs{
+        margin-top: 25px;
+    }
+    .left{
+        img{
+            display: block;
+        }
+    }
+    .select{
+        margin-top: 10px;
+    }
+    .size{
+        margin-top: 12px;
+    }
+    .title{
+        color: $base-black;
+        span{
+            color: $base-grey;
+        }
+    }
+    a.button{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .close{
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 19px;
+        top: 12px;
+        right: 12px;
+        background: url('../img/sprite.png') -69px -74px no-repeat;
+    }
+}

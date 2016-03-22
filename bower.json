@@ -1,0 +1,27 @@
+{
+  "name": "Shop",
+  "version": "0.0.0",
+  "authors": [
+    "Alexey Belushkin <al.belushkin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "masonry": "~4.0.0",
+    "slick-carousel": "~1.5.9",
+    "imagesloaded": "~4.1.0",
+    "handlebars": "~4.0.5"
+  }
+}

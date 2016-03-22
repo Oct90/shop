@@ -1,0 +1,19 @@
+footer{
+	margin: 32px 0;
+	.title{
+        font-weight: 600;
+		text-transform: uppercase;
+		color: $base-black;
+		margin-bottom: 10px;
+	}
+	a{
+		color: $base-grey;
+		line-height: 2em;
+        &:hover{
+            color: $base-black;
+        }
+	}
+	.social{
+		margin-top: 22px;
+	}
+}

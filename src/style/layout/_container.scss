@@ -1,0 +1,19 @@
+.line,
+.wrapper{
+	width: 100%;
+}
+.wrapper{
+	position: relative;
+	left: 0px;
+	transition:  left 0.4s ease-in-out;
+    height: 100%;
+    &.show-sidebar{
+    	left: 240px;
+    }
+}
+.container{
+	max-width: 1248px;
+	margin: 0 auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}

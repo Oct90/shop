@@ -1,0 +1,155 @@
+.item-detail{
+    margin-top: 20px;
+    .top{
+        position: relative;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        float: right;
+    }
+    .photos{
+        div{
+            width: 48%;
+            margin-bottom: 12px;
+            float: left;
+            &:hover{
+                outline: 1px solid $base-black;
+            }
+            img{
+                display: block;
+            }
+            &:nth-child(odd){
+                margin-right: 12px;
+            }
+        }
+    }
+    .main {
+        h1 {
+            margin: 0;
+            color: #000000;
+            font: 400 20px/24px 'OpenSans', sans-serif;
+        }
+    }
+    .title{
+        font-weight: 600;
+        color: $base-black;
+        span{
+            font-weight: 400;
+            color: $base-grey;
+        }
+    }
+    .color,
+    .size{
+        margin-top: 24px;
+        .select{
+            margin-top: 24px;
+        }
+        .pagen{
+            float: right;
+        }
+    }
+    .button{
+        margin: 24px auto;
+        width: 192px;
+        margin-top: 24px;
+    }
+    .brand-detail{
+        text-align: center;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        a{
+            margin-top: 8px;
+            color: $base-grey;
+            span{
+                color: $base-black;
+	            transition: .2s ease-in-out;
+            }
+            &:hover,
+            &:hover>span{
+                color: $base-red;
+            }
+        }
+    }
+    .bottom{
+        margin-top: 48px;
+        padding: 0 15px;
+        a{
+            display: block;
+            position: relative;
+            &.prev{
+                float: left;
+                padding-left: 21px
+            }
+            &.next{
+                float: right;
+                padding-right: 21px
+            }
+            &.prev:before,
+            &.next:after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 9px;
+                height: 18px;
+                top: 0;
+            }
+            &.prev:before{
+                background: url('../img/sprite.png') -39px -84px no-repeat;
+                left: 0;
+            }
+            &.next:after{
+                background: url('../img/sprite.png') -52px -84px no-repeat;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .item-detail{
+        .size{
+            .pagen{
+                float: left;
+            }
+        }
+        .photos{
+            div{
+                width: 30%;
+                &:nth-child(2),
+                &:nth-child(4){
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .item-detail{    
+        .left{
+            width: 56%;
+        }
+        .right{
+            width: 42.83%;
+        }
+        .button{
+            float: left;
+            width: 192px;
+        }
+    }
+}
+@media screen and (min-width: 940px){
+    .button{
+        float: right;
+    }
+    .brand-detail{
+        position: absolute;
+        right: 15px;
+        bottom: 0px;
+    }
+}

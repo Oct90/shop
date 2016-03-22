@@ -1,0 +1,32 @@
+.brad {
+    margin-top: 15px;
+    &.section{
+        margin-top: 38px;
+    }
+    li {
+        display: inline-block;
+        color: $base-black;
+        &:last-child{
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        &:first-child a {
+            margin-left: 0;
+        }
+    }
+    a {
+        color: $base-black;
+        margin: 0 10px;
+        &:hover{
+            color: $base-red;
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+  .brad.section {
+        float: left;
+        margin-left: 120px;
+        margin-top: 0px;
+    }
+}

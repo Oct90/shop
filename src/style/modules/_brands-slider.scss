@@ -1,0 +1,23 @@
+.brands-slider{
+    .slick-slide img{
+        margin: 0 auto;
+    }
+    .slick-arrow{
+        position: absolute;
+        width: 11px;
+        height: 20px;
+        border: none;
+        font-size: 0px;
+        top: 50%;
+        margin-top: -10px;
+        z-index: 99;
+        outline: none;
+        &.slick-prev {
+            background: url('../img/sprite.png') -18px -82px no-repeat;
+        }
+        &.slick-next {
+            background: url('../img/sprite.png') 0px -82px no-repeat;
+            right: 0;
+        }
+    }
+}

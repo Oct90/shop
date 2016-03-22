@@ -1,0 +1,176 @@
+header{
+	padding: 28px 0;
+	.logo{
+		float: left;
+		a{
+			color: $base-black
+		}
+		#nav-icon {
+			float: left;
+			width: 27px;
+			height: 18px;
+			margin: 4px 20px 0 0;
+			position: relative;
+			transform: rotate(0deg);
+			transition: .5s ease-in-out;
+			cursor: pointer;
+		}
+
+		#nav-icon span {
+			display: inline-block;
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			background: #000;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			transform: rotate(0deg);
+			transition: .25s ease-in-out;
+		}
+
+		#nav-icon span:nth-child(1) {
+			top: 0px;
+			transform-origin: left center;
+		}
+
+		#nav-icon span:nth-child(2) {
+			top: 7px;
+			transform-origin: left center;
+		}
+
+		#nav-icon span:nth-child(3) {
+			top: 14px;
+			transform-origin: left center;
+		}
+
+		#nav-icon.open span:nth-child(1) {
+			transform: rotate(45deg);
+			top: -2px;
+			left: 3px;
+		}
+
+		#nav-icon.open span:nth-child(2) {
+			width: 0%;
+			opacity: 0;
+		}
+
+		#nav-icon.open span:nth-child(3) {
+			transform: rotate(-45deg);
+			top: 17px;
+			left: 3px;
+		}
+	}
+	nav.top{
+		position: absolute;
+		width: 240px;
+		height: 100%;
+		background: $base-red;
+		top: 0;
+		left: -240px;
+		ul{
+			li{
+				margin: 0px;
+				&:hover a{
+					background: #C9223D;
+				}
+				a{
+					padding: 15px 20px;
+					display: block;
+					border-bottom: 1px solid #C9223D;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.header-actions{
+		float: right;
+		a{
+			display: block;
+			float: right;
+			margin: 3px 0 0 28px;
+			&.account{
+				width: 19px;
+				height: 19px;
+				margin-left: 0px;
+				background: url('../img/sprite.png') 0 0 no-repeat;
+			}
+			&.search{
+				width: 18px;
+				height: 19px;
+				background: url('../img/sprite.png') -34px 0 no-repeat;
+                transition: none;
+                &.open{
+                    background: url('../img/sprite.png') -69px -74px no-repeat;
+                }
+			}
+			&.cart{
+				width: 20px;
+				height: 19px;
+				background: url('../img/sprite.png') -68px 0 no-repeat;
+				position: relative;
+				span.incart{
+					position: absolute;
+					display: block;
+					width: 24px;
+					height: 24px;
+					background: $base-red;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 24px;
+					color: #fff;
+					font-size: 0.750em;
+					top: -12px;
+					right: -12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        .logo{
+            width: 16%;
+            #nav-icon {
+                display: none;
+            }
+        }
+        nav.top{
+            position: inherit;
+            float: left;
+            width: 64%;
+            height: 100%;
+            background: #fff;
+            text-align: center;
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 64px;
+                    &:hover a{
+                        background: none;
+                        color: $base-black;
+                    }
+                    a{
+                        padding: 0px;
+                        border-bottom: none;
+                        color: $base-grey;
+                    }
+                }
+            }
+        }
+        .header-actions{
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+	.header-actions{
+		a{
+			margin-left: 64px;
+		}
+	}
+}
+}

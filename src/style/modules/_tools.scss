@@ -1,0 +1,40 @@
+.tools{
+    .info{
+        float: left;
+        display: none;
+        a.show-filter{
+            color: #000;
+            position: relative;
+            padding-left: 12px;
+            float: left;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 6px;
+                height: 12px;
+                top: 6px;
+                left: 0px;
+                background: url('../img/sprite.png') -55px -90px no-repeat;
+            }
+            &.open{
+                &:before{
+                    background: url('../img/sprite.png') -39px -90px no-repeat;               
+                }
+            }
+        }
+        .count{
+            float: right;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .tools{
+        .info{
+            display: block;
+        }
+    }
+}

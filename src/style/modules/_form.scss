@@ -1,0 +1,29 @@
+.form{
+	position: relative;
+	label{
+		text-align: left;
+		display: block;
+		color: $base-black;
+        font-weight: 600;
+		line-height: 1em;
+		font-variant: small-caps;
+	}
+	input[type="submit"]{
+		border: none;
+		background: none;
+		appearance: none;
+		outline: none;
+        font-weight: 600;
+		line-height: 1em;
+		font-variant: small-caps;
+		color: $base-black;
+		position: absolute;
+		top: 29px;
+		right: 0px;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            color: $base-red;
+        }
+	}
+}

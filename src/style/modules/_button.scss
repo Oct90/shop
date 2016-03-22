@@ -1,0 +1,15 @@
+a.button{
+	display: block;
+	width: 96px;
+	height: 36px;
+	line-height: 36px;
+	background-color: $base-black;
+	color: #fff;
+    font-weight: 600;
+	font-size: 0.875em;
+	font-variant: small-caps;
+	text-align: center;
+	&:hover{
+		background-color: $base-red;
+	}
+}

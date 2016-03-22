@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+html,
+body{
+	height: 100%;
+	width: 100%;
+}
+html{
+	font: $base-font;
+	color: $base-grey;
+}
+body{
+	background: $base-bg;
+    margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	transition: .2s ease-in-out;
+	text-decoration: none;
+    color: $base-black;
+    &:hover{
+        color: $base-red;
+    }
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+h1,h2,h3,h4,h5,h6{
+	color: $base-black;
+}
+h1{
+	line-height: 1.5em;
+	font-weight: 400;
+}

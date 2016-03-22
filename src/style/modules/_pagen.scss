@@ -1,0 +1,30 @@
+.pagen {
+    color: $base-black;
+    float: left;
+    display: none;
+    .prev,
+    .next{
+        width: 6px;
+        height: 12px;
+        display: inline-block;
+    }
+    .prev {
+        background: url('../img/sprite.png') -39px -90px no-repeat;
+        &:hover{
+        }
+    }
+    .next {
+        background: url('../img/sprite.png') -55px -90px no-repeat;
+        &:hover{
+        }
+    }
+    .pages {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .pagen {
+        display: block;
+    }
+}

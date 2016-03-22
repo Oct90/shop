@@ -1,0 +1,37 @@
+.social{
+	a{
+		display: inline-block;
+		margin-right: 3px;
+        padding: 15px;
+        border: 2px solid #fff;
+        &:hover{
+            border: 2px solid $base-grey;
+        }
+		&.fb{
+			width: 8px;
+			height: 18px;
+			background: url('../img/sprite.png') 11px -105px no-repeat;
+		}
+		&.tw{
+			width: 23px;
+			height: 18px;
+			background: url('../img/sprite.png') -24px -105px no-repeat;
+		}
+		&.gp{
+			width: 18px;
+			height: 18px;
+			background: url('../img/sprite.png') -62px -105px no-repeat;
+		}
+		&.pin{
+			width: 14px;
+			height: 18px;
+			background: url('../img/sprite.png') -98px -105px no-repeat;
+		}
+		&.inst{
+			width: 18px;
+			height: 18px;
+			background: url('../img/sprite.png') -134px -105px no-repeat;
+			margin-right: 0px;
+		}
+	}
+}

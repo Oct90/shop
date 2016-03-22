@@ -1,0 +1,52 @@
+.sort {
+    position: relative;
+    color: $base-black;
+    cursor: pointer;
+    margin: 48px 0 0;
+    &:after{
+        content: "";
+        display: block;
+        width: 12px;
+        height: 6px;
+        top: -3px;
+        display: inline-block;
+        position: relative;
+        background: url('../img/sprite.png') -93px -96px no-repeat;
+    }
+    &.open{
+        &:after{
+            background: url('../img/sprite.png') -71px -96px no-repeat;
+        }
+    }
+    ul {
+        position: absolute;
+        top: 32px;
+        z-index: 118;
+        border: 1px solid $base-grey;
+        width: 100%;
+        background: #fff;
+        display: none;
+        li {
+            list-style: none;
+            padding: 10px 12px;
+            cursor: pointer;
+            &:hover{
+                color: $base-red;
+            }
+        }
+    }
+    li.selected {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .sort {
+        float: right;
+        margin: 0;
+        ul {
+            right: 0;
+            width: 200px;
+        }
+    }
+}
